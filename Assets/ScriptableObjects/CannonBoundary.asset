@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: CannonBoundary
+  m_EditorClassIdentifier: Assembly-CSharp::Boundary
+  z1: -20
+  z2: -32
+  height: 20
+  heightBuffer: 0
+  objTransform: {fileID: 0}
+  quadMaterial: {fileID: 2100000, guid: 931ad4092a7bc8e40b40d2021e4e67b8, type: 2}
