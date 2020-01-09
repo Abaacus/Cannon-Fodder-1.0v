@@ -47,12 +47,17 @@ public class GameManager : MonoBehaviour
         windController = WindController.instance;
 
         cloudController.StartCoroutine(cloudController.CloudSpammer()); // start the cloudSpammer coroutine
-        StartCoroutine(StartGame());    // start the startgame coroutine
+        StartGame();
     }
     
-    IEnumerator StartGame()
+    void StartGame()
     {
-        yield return new WaitForEndOfFrame();   // wait until the start function frame is finished...
+        StartCoroutine(IStartGame());    // start the startgame coroutine
+    }
+
+    IEnumerator IStartGame()
+    {
+        yield return new WaitForSeconds(1);   // wait until the start function frame is finished...
         audioManager.PlaySound("GameMusic");
         DecreaseScore();    // reset the score
         StartCoroutine(GenerateNewLevel());

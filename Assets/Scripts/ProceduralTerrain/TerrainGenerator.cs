@@ -38,11 +38,6 @@ public class TerrainGenerator : MonoBehaviour
     public enum HeightType { perlin, multiFreqPerlin, multiFreqNoise};
     public HeightType heightType;
 
-    private void Start()
-    {
-        GenerateNewTerrain();
-    }
-
     public void GenerateNewTerrain()
     {
         offset = Random.Range(-10000f, 10000f);
